@@ -1,15 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import DevTools from "mobx-react-devtools"
+import React, { useState } from 'react';
+import { Col, Row } from 'antd';
 import './App.css';
+import 'antd/dist/reset.css';
+import { observer } from "mobx-react-lite"
+import InputTodo from "./components/InputTodo"
+import ListTodo from './components/ListTodo';
 
-function App() {
+const App =()=> {
   return (
     <div className="App">
-      <DevTools/>
-      Hello world
+      <Row>
+        <Col span={12} offset={6}>
+          <InputTodo/>
+          <ListTodo/>
+        </Col>
+      </Row>
     </div>
   );
 }
 
-export default App;
+
+export default App; 

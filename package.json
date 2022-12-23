@@ -13,6 +13,7 @@
     "@types/node": "^16.18.9",
     "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.9",
+    "antd": "^5.1.0",
     "babel-jest": "^27.4.2",
     "babel-loader": "^8.2.3",
     "babel-plugin-named-asset-import": "^0.3.8",
@@ -36,7 +37,9 @@
     "jest-resolve": "^27.4.2",
     "jest-watch-typeahead": "^1.0.0",
     "mini-css-extract-plugin": "^2.4.5",
+    "mobx": "^6.7.0",
     "mobx-react-devtools": "^6.1.1",
+    "mobx-react-lite": "^3.4.0",
     "postcss": "^8.4.4",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-loader": "^6.2.1",
@@ -140,12 +143,6 @@
   "babel": {
     "presets": [
       "react-app"
-    ],
-    "plagins": [
-      "@babel/plugin-proposal-decorators",
-      {
-        "legacy": true
-      }
     ]
   }
 }
